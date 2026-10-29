@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SloyT — FDM 3D печать на заказ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="SloyT">
+            </a>
+            <nav>
+                <a href="#fdm">Технология</a>
+                <a href="#printer">Оборудование</a>
+                <a href="#materials">Материалы</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero container fade-in-up">
+        <div class="hero-content">
+            <h1 class="hero-title">FDM <span>3D-печать</span> на заказ</h1>
+            <p class="hero-subtitle">Изготовление функциональных прототипов, корпусов, оснастки и деталей из инженерных пластиков. Точность, прочность и скорость.</p>
+            <div>
+                <a href="#contact" class="btn btn-primary">Заказать печать</a>
+                <a href="#materials" class="btn btn-outline">Материалы</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="printer-scene">
+                <div class="printer-machine">
+                    <div class="printer-back-panel"></div>
+                    <div class="printer-top-frame"></div>
+                    <div class="printer-left-column"></div>
+                    <div class="printer-right-column"></div>
+                    <div class="printer-rail"></div>
+                    <div class="printer-extruder"></div>
+                    <div class="printer-nozzle"></div>
+                    <div class="printer-molten"></div>
+                    <div class="printer-part">
+                        <div class="printer-layer layer-6"></div>
+                        <div class="printer-layer layer-5"></div>
+                        <div class="printer-layer layer-4"></div>
+                        <div class="printer-layer layer-3"></div>
+                        <div class="printer-layer layer-2"></div>
+                        <div class="printer-layer layer-1"></div>
+                    </div>
+                    <div class="printer-bed-texture"></div>
+                    <div class="printer-bed"></div>
+                    <div class="printer-filament-arc"></div>
+                    <div class="printer-spool"></div>
+                    <div class="printer-base"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FDM БЛОК -->
+    <section class="fdm-section" id="fdm">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Технология FDM</h2>
+            <p class="section-desc fade-in-up">Fused Deposition Modeling — послойное наплавление термопластика. Самый популярный и универсальный метод 3D-печати для создания прочных и долговечных изделий.</p>
+            
+            <div class="fdm-grid">
+                <div class="fdm-card fade-in-up">
+                    <div class="fdm-icon">1</div>
+                    <h3>Большая область печати</h3>
+                    <p>Размер камеры до 400×400×450 мм. Возможность печати крупногабаритных корпусов и деталей целиком без склейки.</p>
+                </div>
+                <div class="fdm-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="fdm-icon">2</div>
+                    <h3>Высокая точность</h3>
+                    <p>Высота слоя от 0.1 мм. Обеспечиваем гладкую поверхность и точные геометрические размеры ваших моделей.</p>
+                </div>
+                <div class="fdm-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="fdm-icon">3</div>
+                    <h3>Широкий выбор материалов</h3>
+                    <p>От бюджетного PLA до инженерного PEEK. Подберём материал под ваши задачи: прочность, термостойкость, гибкость.</p>
+                </div>
+                <div class="fdm-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="fdm-icon">4</div>
+                    <h3>Постобработка</h3>
+                    <p>Удаление поддержек, шлифовка, грунтовка и покраска. Ваше изделие будет выглядеть как серийный образец.</p>
+                </div>
+            </div>
+
+            <div class="fdm-highlight fade-in-up">
+                <div class="fdm-highlight-text">
+                    <h3>Что мы можем напечатать?</h3>
+                    <ul>
+                        <li>Функциональные прототипы и тестовые образцы</li>
+                        <li>Корпуса для электроники и бытовой техники</li>
+                        <li>Детали машин и механизмов, шестерни, втулки</li>
+                        <li>Оснастку, кондукторы и приспособления</li>
+                        <li>Мелкосерийные партии изделий (от 1 до 1000 шт.)</li>
+                        <li>Архитектурные макеты и выставочные образцы</li>
+                    </ul>
+                </div>
+
+                <div class="fdm-highlight-visual">
+                    <div class="layer-art">
+                        <div class="layer-line line-1"></div>
+                        <div class="layer-line line-2"></div>
+                        <div class="layer-line line-3"></div>
+                        <div class="layer-line line-4"></div>
+                        <div class="layer-line line-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРИНТЕРЫ -->
+    <section id="printer" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Наше оборудование</h2>
+            <p class="section-desc fade-in-up">Мы печатаем на современных закрытых 3D-принтерах, которые обеспечивают стабильное качество и высокую скорость.</p>
+            
+            <div class="printers-grid">
+                <div class="printer-card fade-in-up">
+                    <div class="printer-info">
+                        <div class="printer-label">
+                            <div class="printer-label-dot"></div>
+                            <span class="printer-label-text">Флагман</span>
+                        </div>
+                        <h3 class="printer-title">Bambu Lab P2S Combo</h3>
+                        <p class="printer-desc">Высокоскоростной закрытый 3D-принтер с мультицветной печатью (AMS). Идеален для сложных инженерных материалов.</p>
+                        
+                        <div class="printer-features">
+                            <div class="printer-feature">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Скорость до 600 мм/с</span>
+                            </div>
+                            <div class="printer-feature">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Закрытая камера, AI-контроль</span>
+                            </div>
+                            <div class="printer-feature">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Мультицветная печать (до 4 цветов)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="printer-visual">
+                        <img src="blp2s.jpg" alt="Bambu Lab P2S">
+                    </div>
+                </div>
+
+                <div class="printer-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="printer-info">
+                        <div class="printer-label">
+                            <div class="printer-label-dot"></div>
+                            <span class="printer-label-text">Рабочая лошадка</span>
+                        </div>
+                        <h3 class="printer-title">Bambu Lab P1S</h3>
+                        <p class="printer-desc">Надежный закрытый принтер для быстрой и качественной печати инженерными пластиками (ABS, PETG, Нейлон).</p>
+                        
+                        <div class="printer-features">
+                            <div class="printer-feature">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Скорость до 500 мм/с</span>
+                            </div>
+                            <div class="printer-feature">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Закрытая камера</span>
+                            </div>
+                            <div class="printer-feature">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Высокая точность (0.1 мм)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="printer-visual">
+                        <img src="blp1s.jpg" alt="Bambu Lab P1S">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- МАТЕРИАЛЫ -->
+    <section id="materials">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Наши материалы</h2>
+            <p class="section-desc fade-in-up">Мы работаем только с проверенными пластиками от ведущих производителей. Подберём оптимальный материал под вашу задачу.</p>
+            
+            <div class="materials-grid">
+                <div class="material-card fade-in-up" style="--material-color: #7B3FF2;">
+                    <div class="material-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <div class="material-name"><span>01</span> PLA</div>
+                    <div class="material-prop">Прочность: Базовая | Температура: до 60°C</div>
+                    <div class="material-desc">Самый популярный пластик для декоративных изделий и макетов. Легко печатается, даёт гладкую поверхность. <strong>Идеален для:</strong> статуэток, архитектурных макетов, прототипов.</div>
+                    <div class="material-tags">
+                        <span class="material-tag">Декор</span>
+                        <span class="material-tag">Макеты</span>
+                    </div>
+                </div>
+
+                <div class="material-card fade-in-up" style="--material-color: #8B5CF6; transition-delay: 0.1s;">
+                    <div class="material-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="material-name"><span>02</span> ABS</div>
+                    <div class="material-prop">Прочность: Высокая | Температура: до 100°C</div>
+                    <div class="material-desc">Ударопрочный технический пластик. Устойчив к перепадам температур и нагрузкам. <strong>Идеален для:</strong> корпусов техники, деталей авто, инструмента.</div>
+                    <div class="material-tags">
+                        <span class="material-tag">Корпуса</span>
+                        <span class="material-tag">Авто</span>
+                    </div>
+                </div>
+
+                <div class="material-card fade-in-up" style="--material-color: #9B6DFF; transition-delay: 0.2s;">
+                    <div class="material-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="material-name"><span>03</span> PETG</div>
+                    <div class="material-prop">Прочность: Высокая | Температура: до 80°C</div>
+                    <div class="material-desc">Универсальный материал, сочетающий прочность ABS и простоту PLA. Химически стойкий. <strong>Идеален для:</strong> упаковки, медицинских изделий, деталей с контактом с водой.</div>
+                    <div class="material-tags">
+                        <span class="material-tag">Пищевой</span>
+                        <span class="material-tag">Химия</span>
+                    </div>
+                </div>
+
+                <div class="material-card fade-in-up" style="--material-color: #BFA3FF; transition-delay: 0.3s;">
+                    <div class="material-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <div class="material-name"><span>04</span> Нейлон</div>
+                    <div class="material-prop">Прочность: Очень высокая | Температура: до 120°C</div>
+                    <div class="material-desc">Инженерный пластик с низким трением. Заменяет металл в узлах трения. <strong>Идеален для:</strong> шестерёнок, втулок, подшипников, нагруженных деталей.</div>
+                    <div class="material-tags">
+                        <span class="material-tag">Механика</span>
+                        <span class="material-tag">Шестерни</span>
+                    </div>
+                </div>
+
+                <div class="material-card fade-in-up" style="--material-color: #D0BFFF; transition-delay: 0.4s;">
+                    <div class="material-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path>
+                            <path d="M2 18c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path>
+                            <path d="M2 6c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path>
+                        </svg>
+                    </div>
+                    <div class="material-name"><span>05</span> TPU</div>
+                    <div class="material-prop">Прочность: Гибкий | Температура: до 80°C</div>
+                    <div class="material-desc">Эластичный пластик, который гнётся, но не ломается. <strong>Идеален для:</strong> прокладок, демпферов, чехлов, браслетов и всего, что должно быть мягким.</div>
+                    <div class="material-tags">
+                        <span class="material-tag">Гибкий</span>
+                        <span class="material-tag">Чехлы</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+            <div class="contact-info fade-in-up">
+                <h2>Оставьте заявку</h2>
+                <p>Заполните форму, и мы свяжемся с вами в течение 15 минут для уточнения деталей и расчета стоимости.</p>
+                <div class="contact-detail"><span></span> +7 965 149-83-49</div>
+            </div>
+            
+            <form class="contact-form fade-in-up" id="orderForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" required placeholder="Иван Иванов">
+                </div>
+
+                <!-- ОСНОВНОЙ СПОСОБ СВЯЗИ - ТЕЛЕФОН -->
+                <div class="form-group">
+                    <label for="phone">Телефон (основной способ связи)</label>
+                    <input type="tel" id="phone" required placeholder="+7 (999) 000-00-00">
+                </div>
+
+                <!-- ДОПОЛНИТЕЛЬНЫЙ СПОСОБ СВЯЗИ -->
+                <div class="form-group" style="background: rgba(123, 63, 242, 0.03); padding: 15px; border-radius: 12px; border: 1px dashed rgba(123, 63, 242, 0.2);">
+                    <label style="margin-bottom: 10px; display: block;">Дополнительно (необязательно)</label>
+                    <div style="display: flex; gap: 10px;">
+                        <select id="messenger" style="flex: 0 0 130px; padding: 12px; border: 1px solid #E0E0E0; border-radius: 8px; font-family: inherit; font-size: 14px; background-color: var(--white); cursor: pointer; color: var(--dark-bg);">
+                            <option value="">Мессенджер</option>
+                            <option value="Telegram">Telegram</option>
+                            <option value="ВКонтакте">ВКонтакте</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                        </select>
+                        <input type="text" id="messenger_contact" style="flex: 1; padding: 12px; border: 1px solid #E0E0E0; border-radius: 8px; font-family: inherit; font-size: 14px;" placeholder="Ссылка или @username">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Комментарий (что нужно напечатать?)</label>
+                    <textarea id="comment" placeholder="Опишите задачу, материал, количество..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="container">
+            &copy; 2026 SloyT. Все права защищены.
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal">
+            <h3>Заявка отправлена!</h3>
+            <p>Спасибо! Мы получили вашу заявку и свяжемся с вами в ближайшее время.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Отлично</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
