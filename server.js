@@ -25,14 +25,12 @@ app.post('/api/send-order', async (req, res) => {
         return res.status(400).json({ success: false, message: 'Заполните имя и телефон' });
     }
 
-    // Формируем сообщение
     let message = `
 🔥 Новая заявка с сайта SloyT!
 👤 Имя: ${name}
 📞 Телефон: ${phone}
     `;
 
-    // Если указан дополнительный мессенджер, добавляем его
     if (messenger && messenger_contact) {
         message += `📱 Доп. связь: ${messenger} (${messenger_contact})\n`;
     }

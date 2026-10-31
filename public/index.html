@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- ШАПКА -->
     <header>
         <div class="container header-inner">
             <a href="#" class="logo">
@@ -23,7 +22,6 @@
         </div>
     </header>
 
-    <!-- ГЛАВНЫЙ ЭКРАН -->
     <section class="hero container fade-in-up">
         <div class="hero-content">
             <h1 class="hero-title">FDM <span>3D-печать</span> на заказ</h1>
@@ -63,7 +61,6 @@
         </div>
     </section>
 
-    <!-- FDM БЛОК -->
     <section class="fdm-section" id="fdm">
         <div class="container">
             <h2 class="section-title fade-in-up">Технология FDM</h2>
@@ -118,7 +115,6 @@
         </div>
     </section>
 
-    <!-- ПРИНТЕРЫ -->
     <section id="printer" style="background-color: var(--white);">
         <div class="container">
             <h2 class="section-title fade-in-up">Наше оборудование</h2>
@@ -186,14 +182,13 @@
         </div>
     </section>
 
-    <!-- МАТЕРИАЛЫ -->
     <section id="materials">
         <div class="container">
             <h2 class="section-title fade-in-up">Наши материалы</h2>
             <p class="section-desc fade-in-up">Мы работаем только с проверенными пластиками от ведущих производителей. Подберём оптимальный материал под вашу задачу.</p>
             
             <div class="materials-grid">
-                <!-- PETG (теперь первый) -->
+                <!-- PETG -->
                 <div class="material-card fade-in-up" style="--material-color: #7B3FF2;">
                     <div class="material-icon">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -209,7 +204,7 @@
                     </div>
                 </div>
 
-                <!-- PLA (теперь второй) -->
+                <!-- PLA -->
                 <div class="material-card fade-in-up" style="--material-color: #8B5CF6; transition-delay: 0.1s;">
                     <div class="material-icon">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -281,7 +276,6 @@
         </div>
     </section>
 
-    <!-- ФОРМА -->
     <section class="contact-section" id="contact">
         <div class="container contact-inner">
             <div class="contact-info fade-in-up">
@@ -295,20 +289,24 @@
                     <label for="name">Ваше имя</label>
                     <input type="text" id="name" required placeholder="Иван Иванов">
                 </div>
-                
-                <div class="form-group" style="display: flex; gap: 10px;">
-                    <div style="flex: 0 0 140px;">
-                        <label for="messenger">Куда писать?</label>
-                        <select id="messenger" style="width: 100%; padding: 14px 16px; border: 1px solid #E0E0E0; border-radius: 12px; font-family: inherit; font-size: 15px; background-color: var(--light-gray); cursor: pointer; color: var(--dark-bg);">
-                            <option value="Телефон">Телефон</option>
+
+                <!-- ОСНОВНОЙ СПОСОБ СВЯЗИ - ТЕЛЕФОН -->
+                <div class="form-group">
+                    <label for="phone">Телефон (основной способ связи)</label>
+                    <input type="tel" id="phone" required placeholder="+7 (999) 000-00-00">
+                </div>
+
+                <!-- ДОПОЛНИТЕЛЬНЫЙ СПОСОБ СВЯЗИ -->
+                <div class="form-group" style="background: rgba(123, 63, 242, 0.03); padding: 15px; border-radius: 12px; border: 1px dashed rgba(123, 63, 242, 0.2);">
+                    <label style="margin-bottom: 10px; display: block;">Дополнительно (необязательно)</label>
+                    <div style="display: flex; gap: 10px;">
+                        <select id="messenger" style="flex: 0 0 130px; padding: 12px; border: 1px solid #E0E0E0; border-radius: 8px; font-family: inherit; font-size: 14px; background-color: var(--white); cursor: pointer; color: var(--dark-bg);">
+                            <option value="">Мессенджер</option>
                             <option value="Telegram">Telegram</option>
                             <option value="ВКонтакте">ВКонтакте</option>
                             <option value="WhatsApp">WhatsApp</option>
                         </select>
-                    </div>
-                    <div style="flex: 1;">
-                        <label for="phone">Контакт для связи</label>
-                        <input type="text" id="phone" required placeholder="+7 (999) 000-00-00 или @username">
+                        <input type="text" id="messenger_contact" style="flex: 1; padding: 12px; border: 1px solid #E0E0E0; border-radius: 8px; font-family: inherit; font-size: 14px;" placeholder="Ссылка или @username">
                     </div>
                 </div>
 
@@ -321,14 +319,12 @@
         </div>
     </section>
 
-    <!-- ПОДВАЛ -->
     <footer>
         <div class="container">
             &copy; 2026 SloyT. Все права защищены.
         </div>
     </footer>
 
-    <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="modal-overlay" id="successModal">
         <div class="modal">
             <h3>Заявка отправлена!</h3>
