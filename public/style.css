@@ -243,3 +243,56 @@ footer { padding: 40px 0; border-top: 1px solid rgba(30, 27, 46, 0.08); text-ali
     .form-group[style*="display: flex"] { flex-direction: column; }
     .form-group[style*="display: flex"] > div { flex: 1 1 100% !important; }
 }
+
+/* --- АККОРДЕОН МАТЕРИАЛОВ --- */
+.material-toggle {
+    background: none;
+    border: none;
+    color: var(--purple);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+    margin-top: auto;
+    width: 100%;
+    border-top: 1px dashed rgba(123, 63, 242, 0.2);
+    transition: color 0.3s;
+}
+.material-toggle:hover {
+    color: var(--purple-hover);
+}
+.material-toggle .arrow {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+.material-toggle.active .arrow {
+    transform: rotate(180deg);
+}
+.material-subtypes {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: rgba(123, 63, 242, 0.02);
+    border-radius: 0 0 12px 12px;
+    margin: 0 -18px -24px -18px;
+}
+.material-subtypes.open {
+    max-height: 500px;
+}
+.subtype-item {
+    font-size: 12px;
+    color: var(--dark-bg);
+    padding: 10px 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    line-height: 1.4;
+}
+.subtype-item:last-child {
+    border-bottom: none;
+}
+.subtype-item strong {
+    color: var(--purple);
+}

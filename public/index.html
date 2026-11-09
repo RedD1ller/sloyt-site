@@ -191,83 +191,75 @@
                 <!-- PETG -->
                 <div class="material-card fade-in-up" style="--material-color: #7B3FF2;">
                     <div class="material-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
-                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
                     </div>
-                    <div class="material-name"><span>01</span> PETG</div>
-                    <div class="material-prop">Прочность: Высокая | Температура: до 80°C</div>
-                    <div class="material-desc">Универсальный материал, сочетающий прочность ABS и простоту PLA. Химически стойкий. <strong>Идеален для:</strong> упаковки, медицинских изделий, деталей с контактом с водой.</div>
-                    <div class="material-tags">
-                        <span class="material-tag">Пищевой</span>
-                        <span class="material-tag">Химия</span>
+                    <div class="material-name">PETG</div>
+                    <div class="material-prop">Прочность: Высокая | Температура: до 80°C | от 900 ₽/кг</div>
+                    <div class="material-desc">Универсальный материал, сочетающий прочность ABS и простоту PLA. <strong>Идеален для:</strong> упаковки, деталей с контактом с водой.</div>
+                    <button class="material-toggle" onclick="toggleMaterial(this)">Разновидности <span class="arrow">▼</span></button>
+                    <div class="material-subtypes">
+                        <div class="subtype-item"><strong>PETG:</strong> 900 ₽/кг. Стандарт.</div>
+                        <div class="subtype-item"><strong>PETG-GF:</strong> 1800 ₽/кг. Стекловолокно (жесткость).</div>
+                        <div class="subtype-item"><strong>PETG-CF:</strong> 1800 ₽/кг. Углеволокно (прочность, мат).</div>
                     </div>
                 </div>
 
                 <!-- PLA -->
                 <div class="material-card fade-in-up" style="--material-color: #8B5CF6; transition-delay: 0.1s;">
                     <div class="material-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                     </div>
-                    <div class="material-name"><span>02</span> PLA</div>
-                    <div class="material-prop">Прочность: Базовая | Температура: до 60°C</div>
-                    <div class="material-desc">Самый популярный пластик для декоративных изделий и макетов. Легко печатается, даёт гладкую поверхность. <strong>Идеален для:</strong> статуэток, архитектурных макетов, прототипов без нагрузок.</div>
-                    <div class="material-tags">
-                        <span class="material-tag">Декор</span>
-                        <span class="material-tag">Макеты</span>
+                    <div class="material-name">PLA</div>
+                    <div class="material-prop">Прочность: Базовая | Температура: до 60°C | от 800 ₽/кг</div>
+                    <div class="material-desc">Самый популярный пластик для декоративных изделий. <strong>Идеален для:</strong> статуэток, макетов.</div>
+                    <button class="material-toggle" onclick="toggleMaterial(this)">Разновидности <span class="arrow">▼</span></button>
+                    <div class="material-subtypes">
+                        <div class="subtype-item"><strong>PLA:</strong> 800 ₽/кг. Базовый.</div>
+                        <div class="subtype-item"><strong>PLA-SILK:</strong> 1300 ₽/кг. Шелк (блеск).</div>
+                        <div class="subtype-item"><strong>PLA-CF:</strong> 2200 ₽/кг. Углеволокно.</div>
                     </div>
                 </div>
 
                 <!-- ABS -->
                 <div class="material-card fade-in-up" style="--material-color: #9B6DFF; transition-delay: 0.2s;">
                     <div class="material-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     </div>
-                    <div class="material-name"><span>03</span> ABS</div>
-                    <div class="material-prop">Прочность: Высокая | Температура: до 100°C</div>
-                    <div class="material-desc">Ударопрочный технический пластик. Устойчив к перепадам температур и нагрузкам. <strong>Идеален для:</strong> корпусов техники, деталей авто, инструмента.</div>
-                    <div class="material-tags">
-                        <span class="material-tag">Корпуса</span>
-                        <span class="material-tag">Авто</span>
+                    <div class="material-name">ABS</div>
+                    <div class="material-prop">Прочность: Высокая | Температура: до 100°C | от 1200 ₽/кг</div>
+                    <div class="material-desc">Ударопрочный технический пластик. <strong>Идеален для:</strong> корпусов техники, деталей авто.</div>
+                    <button class="material-toggle" onclick="toggleMaterial(this)">Разновидности <span class="arrow">▼</span></button>
+                    <div class="material-subtypes">
+                        <div class="subtype-item"><strong>ABS:</strong> 1200 ₽/кг. Классический.</div>
+                        <div class="subtype-item"><strong>ABS-GF:</strong> 1800 ₽/кг. Стекловолокно.</div>
+                        <div class="subtype-item"><strong>ABS-CF:</strong> 2000 ₽/кг. Углеволокно.</div>
                     </div>
                 </div>
 
                 <!-- Нейлон -->
                 <div class="material-card fade-in-up" style="--material-color: #BFA3FF; transition-delay: 0.3s;">
                     <div class="material-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
                     </div>
-                    <div class="material-name"><span>04</span> Нейлон</div>
-                    <div class="material-prop">Прочность: Очень высокая | Температура: до 120°C</div>
-                    <div class="material-desc">Инженерный пластик с низким трением. Заменяет металл в узлах трения. <strong>Идеален для:</strong> шестерёнок, втулок, подшипников, нагруженных деталей.</div>
-                    <div class="material-tags">
-                        <span class="material-tag">Механика</span>
-                        <span class="material-tag">Шестерни</span>
+                    <div class="material-name">Нейлон (PA)</div>
+                    <div class="material-prop">Прочность: Очень высокая | Температура: до 120°C | от 2500 ₽/кг</div>
+                    <div class="material-desc">Заменяет металл в узлах трения. <strong>Идеален для:</strong> шестерёнок, втулок.</div>
+                    <button class="material-toggle" onclick="toggleMaterial(this)">Разновидности <span class="arrow">▼</span></button>
+                    <div class="material-subtypes">
+                        <div class="subtype-item"><strong>PA6:</strong> 2500 ₽/кг. Классический нейлон.</div>
+                        <div class="subtype-item"><strong>PA12:</strong> 3800 ₽/кг. Меньше впитывает влагу.</div>
                     </div>
                 </div>
 
                 <!-- TPU -->
                 <div class="material-card fade-in-up" style="--material-color: #D0BFFF; transition-delay: 0.4s;">
                     <div class="material-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M2 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path>
-                            <path d="M2 18c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path>
-                            <path d="M2 6c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path>
-                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path><path d="M2 18c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path><path d="M2 6c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path></svg>
                     </div>
-                    <div class="material-name"><span>05</span> TPU</div>
+                    <div class="material-name">TPU (Гибкий)</div>
                     <div class="material-prop">Прочность: Гибкий | Температура: до 80°C</div>
-                    <div class="material-desc">Эластичный пластик, который гнётся, но не ломается. <strong>Идеален для:</strong> прокладок, демпферов, чехлов, браслетов и всего, что должно быть мягким.</div>
-                    <div class="material-tags">
+                    <div class="material-desc">Эластичный пластик. <strong>Идеален для:</strong> прокладок, чехлов.</div>
+                    <div class="material-tags" style="margin-top: auto;">
                         <span class="material-tag">Гибкий</span>
                         <span class="material-tag">Чехлы</span>
                     </div>
@@ -279,24 +271,62 @@
     <section class="contact-section" id="contact">
         <div class="container contact-inner">
             <div class="contact-info fade-in-up">
-                <h2>Оставьте заявку</h2>
-                <p>Заполните форму, и мы свяжемся с вами в течение 15 минут для уточнения деталей и расчета стоимости.</p>
+                <h2>Рассчитать заказ</h2>
+                <p>Выберите материал и укажите примерный вес детали. Мы свяжемся с вами для точного расчета.</p>
                 <div class="contact-detail"><span></span> +7 965 149-83-49</div>
+                <div class="contact-detail"><span></span> Минимальный заказ от 800 ₽</div>
             </div>
             
-            <form class="contact-form fade-in-up" id="orderForm">
+            <form class="contact-form fade-in-up" id="orderForm" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Ваше имя</label>
                     <input type="text" id="name" required placeholder="Иван Иванов">
                 </div>
-
-                <!-- ОСНОВНОЙ СПОСОБ СВЯЗИ - ТЕЛЕФОН -->
                 <div class="form-group">
-                    <label for="phone">Телефон (основной способ связи)</label>
+                    <label for="phone">Телефон</label>
                     <input type="tel" id="phone" required placeholder="+7 (999) 000-00-00">
                 </div>
 
-                <!-- ДОПОЛНИТЕЛЬНЫЙ СПОСОБ СВЯЗИ -->
+                <div class="form-group" style="background: var(--light-gray); padding: 15px; border-radius: 12px;">
+                    <label>Материал и расчет</label>
+                    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                        <select id="material" style="flex: 1; padding: 12px; border: 1px solid #E0E0E0; border-radius: 8px; font-family: inherit; font-size: 14px; background-color: var(--white); cursor: pointer;">
+                            <optgroup label="ABS">
+                                <option value="ABS|1200">ABS (1200 ₽/кг)</option>
+                                <option value="ABS-GF|1800">ABS-GF (1800 ₽/кг)</option>
+                                <option value="ABS-CF|2000">ABS-CF (2000 ₽/кг)</option>
+                            </optgroup>
+                            <optgroup label="PLA">
+                                <option value="PLA|800">PLA (800 ₽/кг)</option>
+                                <option value="PLA-CF|2200">PLA-CF (2200 ₽/кг)</option>
+                                <option value="PLA-SILK|1300">PLA-SILK (1300 ₽/кг)</option>
+                            </optgroup>
+                            <optgroup label="PETG">
+                                <option value="PETG|900">PETG (900 ₽/кг)</option>
+                                <option value="PETG-GF|1800">PETG-GF (1800 ₽/кг)</option>
+                                <option value="PETG-CF|1800">PETG-CF (1800 ₽/кг)</option>
+                            </optgroup>
+                            <optgroup label="Нейлон (PA)">
+                                <option value="PA6|2500">PA6 (2500 ₽/кг)</option>
+                                <option value="PA12|3800">PA12 (3800 ₽/кг)</option>
+                            </optgroup>
+                        </select>
+                        <div style="flex: 0 0 100px; position: relative;">
+                            <input type="number" id="weight" min="1" value="100" required style="width: 100%; padding: 12px; border: 1px solid #E0E0E0; border-radius: 8px; font-size: 14px;">
+                            <span style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #888; font-size: 12px;">гр</span>
+                        </div>
+                    </div>
+                    <div style="font-size: 14px; font-weight: 600; color: var(--purple);">
+                        Примерная стоимость: <span id="calc-price">800</span> ₽
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="file">3D-модель (STL, OBJ, 3MF, ZIP)</label>
+                    <input type="file" id="file" name="file" accept=".stl,.obj,.3mf,.zip" style="padding: 10px; background: var(--light-gray); border: 1px dashed #ccc; cursor: pointer;">
+                    <div style="font-size: 11px; color: #888; margin-top: 5px;">Максимальный размер: 50 МБ</div>
+                </div>
+
                 <div class="form-group" style="background: rgba(123, 63, 242, 0.03); padding: 15px; border-radius: 12px; border: 1px dashed rgba(123, 63, 242, 0.2);">
                     <label style="margin-bottom: 10px; display: block;">Дополнительно (необязательно)</label>
                     <div style="display: flex; gap: 10px;">
@@ -311,8 +341,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="comment">Комментарий (что нужно напечатать?)</label>
-                    <textarea id="comment" placeholder="Опишите задачу, материал, количество..."></textarea>
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment" placeholder="Опишите задачу..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary form-submit">Отправить заявку</button>
             </form>
@@ -328,7 +358,7 @@
     <div class="modal-overlay" id="successModal">
         <div class="modal">
             <h3>Заявка отправлена!</h3>
-            <p>Спасибо! Мы получили вашу заявку и свяжемся с вами в ближайшее время.</p>
+            <p>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
             <button class="btn btn-primary" onclick="closeModal()">Отлично</button>
         </div>
     </div>
