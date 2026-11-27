@@ -19,17 +19,26 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-        cb(null, uniqueSuffix + '-' + file.originalname);
+        const ext = path.extname(file.originalname).toLowerCase();
+        cb(null, uniqueSuffix + ext);
     }
 });
-const upload = multer({ storage: storage, limits: { fileSize: 50 * 1024 * 1024 } });
+
+const fileFilter = (req, file, cb) => {
+    const allowed = ['.stl', '.obj', '.3mf', '.zip'];
+    const ext = path.extname(file.originalname).toLowerCase();
+    if (allowed.includes(ext)) cb(null, true);
+    else cb(new Error('Недопустимый формат файла'));
+};
+
+const upload = multer({ storage: storage, fileFilter: fileFilter, limits: { fileSize: 50 * 1024 * 1024 } });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/api/send-order', upload.single('file'), async (req, res) => {
-    const { name, phone, material, weight, price, messenger, messenger_contact, comment } = req.body;
+    const { name, phone, material, weight, quantity, price, messenger, messenger_contact, comment } = req.body;
 
     if (!name || !phone) {
         return res.status(400).json({ success: false, message: 'Заполните имя и телефон' });
@@ -40,7 +49,8 @@ app.post('/api/send-order', upload.single('file'), async (req, res) => {
 👤 Имя: ${name}
 📞 Телефон: ${phone}
 📦 Материал: ${material}
-⚖️ Вес: ${weight} гр.
+⚖️ Вес одной детали: ${weight} г.
+📐 Количество: ${quantity || 1} шт.
 💰 Стоимость: ${price} ₽
     `;
 
@@ -57,6 +67,7 @@ app.post('/api/send-order', upload.single('file'), async (req, res) => {
 ⏱ Время: ${new Date().toLocaleString('ru-RU')}`;
 
     try {
+        if (!process.env.VK_PEER_ID) throw new Error('VK_PEER_ID не задан');
         const peerIds = process.env.VK_PEER_ID.split(',').map(id => Number(id.trim()));
         await vk.api.messages.send({
             peer_ids: peerIds,
